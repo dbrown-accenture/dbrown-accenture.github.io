@@ -18,6 +18,7 @@ echo "* [Home](/)" > _sidebar.md
 
 
 function splitPath { echo "$(echo $1 | cut -d'/' -f $2)"; }
+function splitFileName { echo "$(echo $1 | cut -d'.' -f $2)"; }
 
 function toName { echo "$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"; }
 
@@ -33,7 +34,8 @@ for page_item in ${page_list[@]}; do
     chapter_name=$(toName $chapter)
     page_name=$(toName $page)
 
-    pretty_name=$(echo "$chapter_name :: $page_name")
+    # pretty_name=$(echo "$chapter_name :: $page_name")
+    pretty_name=$(splitFileName $page_name 1)
 
     echo "* [$pretty_name]($page_item)" >> _sidebar.md
 
