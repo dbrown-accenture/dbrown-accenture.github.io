@@ -13,6 +13,8 @@ done
 
 echo "# Documentation of Standard Developer Operations" > README.md
 echo "" >> README.md
+echo "**Table of Contents**" >> README.md
+echo "" >> README.md
 
 echo "* [Home](/)" > _sidebar.md
 
@@ -38,5 +40,6 @@ for page_item in ${page_list[@]}; do
     pretty_name=$(splitFileName $page_name 1)
 
     echo "* [$pretty_name]($page_item)" >> _sidebar.md
+    echo "* [$pretty_name]($page_item)" >> README.md
 
 done

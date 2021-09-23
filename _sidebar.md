@@ -1,7 +1,3 @@
 * [Home](/)
-* [Jira](docs/01_agile/01_jira.md)
-* [Github-Flow](docs/02_github/00_github-Flow.md)
 * [Ssh-client-setup](docs/02_github/01_ssh-client-setup.md)
-* [Repositories](docs/02_github/02_repositories.md)
-* [Pull-requests](docs/02_github/03_pull-requests.md)
-* [Cherry-picking](docs/02_github/04_cherry-picking.md)
+* [Github-Flow](docs/02_github/02_github-Flow.md)
